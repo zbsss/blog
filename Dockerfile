@@ -16,4 +16,4 @@ COPY --from=build /blog /app/blog
 
 CMD ["/app/blog"]
 
-EXPOSE 4000
+EXPOSE 8080
