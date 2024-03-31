@@ -1,13 +1,19 @@
-# Use the official Hugo image as a parent image
-FROM klakegg/hugo:latest as builder
+# TODO: include a separate stage to run `hugo` to build the static content
+FROM golang:1.22-alpine AS build
 
-# Copy the content of your site
-COPY . /site
-WORKDIR /site
+WORKDIR /app
 
-# Build your site
-RUN hugo
+COPY go.mod go.sum ./
+RUN go mod download
 
-# Use Nginx to serve the site
-FROM nginx:alpine
-COPY --from=builder /site/public /usr/share/nginx/html
+COPY . .
+
+RUN go build -o /blog ./cmd/web/
+
+FROM alpine:latest
+
+COPY --from=build /blog /app/blog
+
+CMD ["/app/blog"]
+
+EXPOSE 4000

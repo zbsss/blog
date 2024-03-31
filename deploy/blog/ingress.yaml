@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: blog
+  labels:
+    name: blog
+spec:
+  rules:
+  - host: mkurleto.io
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/blog"
+        backend:
+          service:
+            name: blog
+            port:
+              number: 8080
+
