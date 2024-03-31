@@ -1,0 +1,27 @@
+<header class="p-4 text-lg font-semibold">
+	<div class="flex items-center">
+		<div>
+			{{ strings.Repeat ( .Site.Title | len | add 6 ) "=" }}<br>
+			== <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> ==<br>
+			{{ strings.Repeat ( .Site.Title | len | add 6 ) "=" }}
+		</div>
+		<div class="grow"></div>
+		<div class="hidden md:block">{{ .Site.Params.subtitle }}</div>
+	</div>
+
+	{{ with .Site.Menus.main }}
+		{{ $length := len . }}
+			<nav class="mt-4">
+				<ul class="flex space-x-2">
+					{{ range $index, $item := . }}
+						<li>
+							<a href="{{ $item.URL | relURL }}">
+								<b>{{ $item.Name }}</b>
+							</a>
+						</li>
+						{{ if ne $index (sub $length 1) }}<li>.</li>{{ end }}
+					{{ end }}
+				</ul>
+		  </nav>
+	{{ end }}
+</header>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" class="h-full">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+	<script>
+		tailwind.config = {
+
+		}
+	</script>
+	<style type=text/css>
+		body {
+			font-family: monospace;
+		}
+	</style>
+	<title>{{ .Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	{{ range .Site.Params.customCSS -}}
+		<link rel="stylesheet" href="{{ . | relURL }}?rnd={{ now.Unix }}">
+	{{- end }}
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+</head>
+<body class="h-full min-h-screen flex-1 w-full max-w-4xl mx-auto flex flex-col">
+	<div class="flex flex-col flex-1">
+    {{ partial "header" . }}
+		{{ block "main" . }}{{ end }}
+	</div>
+	{{ partial "footer" . }}
+</body>
+</html>

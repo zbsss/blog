@@ -1,11 +1,13 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://mkurleto.io/blog'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "smol"
+title = 'mkurleto.io'
+copyright = "Michał Kurleto"
 
 [params]
-subtitle = "Your blog subtitle goes here!"
+subtitle = "Software Engineer @ Google"
 dateFmt = "02.01.2006 15:04"
+author = "Michał Kurleto"
+description = "Personal blog of Michał Kurleto"
 
 # Header
 [menu]
@@ -16,29 +18,31 @@ url = "/posts/"
 weight = 1
 
 [[menu.main]]
-identifier = "categories"
-name = "Categories"
-url = "/categories/"
+identifier = "Updates"
+name = "Updates"
+url = "/updates/"
 weight = 2
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 3
 
 [[menu.main]]
 identifier = "tags"
 name = "Tags"
 url = "/tags/"
-weight = 3
+weight = 4
+
 
 # Footer
 [[menu.footer]]
 name = "Github"
-url = "https://github.com/example"
+url = "https://github.com/zbsss"
 weight = 1
 
 [[menu.footer]]
-name = "Mastodon"
-url = "https://example.com/@user"
+name = "LinkedIn"
+url = "https://linkedin.com/in/mkurleto"
 weight = 2
-
-[[menu.footer]]
-name = "Imprint"
-url = "/imprint"
-weight = 3

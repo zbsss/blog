@@ -1,74 +1,160 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en-us" class="h-full">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<style type=text/css>body{font-family:monospace;}</style>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+	<script>
+		tailwind.config = {
+
+		}
+	</script>
+	<style type=text/css>
+		body {
+			font-family: monospace;
+		}
+	</style>
 	<title>Posts</title>
+	<meta name="description" content="Personal blog of Michał Kurleto">
+	<meta name="author" content="Michał Kurleto">
+	<link rel="stylesheet" href="/blog/css/style.css">
 	
-	
-	<link rel="stylesheet" href="/css/style.css">
-	
-	<link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="My New Hugo Site">
+	<link rel="alternate" type="application/rss+xml" href="/blog/posts/index.xml" title="mkurleto.io">
 </head>
-<body>
-	<header>
-	======================<br>
-	== <a href="http://localhost:1313/">My New Hugo Site</a> ==<br>
-	======================
-	<div style="float: right;">Your blog subtitle goes here!</div><br>
-	<p>
-	<nav>
-			<a href="/"><b>Start</b></a>.
-			
-			
-			<a href="/posts/"><b>Posts</b></a>.
-			
-			<a href="/categories/"><b>Categories</b></a>.
-			
-			<a href="/tags/"><b>Tags</b></a>.
-			
-	</nav>
-	</p>
+<body class="h-full min-h-screen flex-1 w-full max-w-4xl mx-auto flex flex-col">
+	<div class="flex flex-col flex-1">
+    <header class="p-4 text-lg font-semibold">
+	<div class="flex items-center">
+		<div>
+			=================<br>
+			== <a href="http://localhost:1313/blog/">mkurleto.io</a> ==<br>
+			=================
+		</div>
+		<div class="grow"></div>
+		<div class="hidden md:block">Software Engineer @ Google</div>
+	</div>
+
+	
+		
+			<nav class="mt-4">
+				<ul class="flex space-x-2">
+					
+						<li>
+							<a href="/blog/posts/">
+								<b>Posts</b>
+							</a>
+						</li>
+						<li>.</li>
+					
+						<li>
+							<a href="/blog/updates/">
+								<b>Updates</b>
+							</a>
+						</li>
+						<li>.</li>
+					
+						<li>
+							<a href="/blog/about/">
+								<b>About</b>
+							</a>
+						</li>
+						<li>.</li>
+					
+						<li>
+							<a href="/blog/tags/">
+								<b>Tags</b>
+							</a>
+						</li>
+						
+					
+				</ul>
+		  </nav>
 	
 </header>
 
-	
-	<main>
+		
+	<main class="max-w-4xl p-4">
 		
 		
-		<div>
-			<h1>Posts</h1>
-			
-		</div>
+			<div>
+				<h1 class="text-3xl font-bold">Posts</h1>
+				
+			</div>
 		
-		
-		<ul>
+
+		<ul class="list-none p-4">
 		    
-		    <li>
-		        <div class="post-title">
-				
-				    2024-03-23 <a href="/posts/2024-03-23-my-first-post/">My First Post</a>
-				
-		        </div>
-		    </li>
+					<li>
+							<div>
+								
+									<span class="text-sm font-medium text-gray-500">2024-03-30</span>
+									<a href="/blog/posts/2024-03-30-getting-started-python/" class="ml-2 text-lg text-blue-600 transition duration-150 ease-in-out">Getting Started With Python</a>
+								
+							</div>
+					</li>
+		    
+					<li>
+							<div>
+								
+									<span class="text-sm font-medium text-gray-500">2024-03-30</span>
+									<a href="/blog/posts/2024-03-30-my-second-post/" class="ml-2 text-lg text-blue-600 transition duration-150 ease-in-out">The Joy of Baking</a>
+								
+							</div>
+					</li>
+		    
+					<li>
+							<div>
+								
+									<span class="text-sm font-medium text-gray-500">2024-03-23</span>
+									<a href="/blog/posts/2024-03-23-my-first-post/" class="ml-2 text-lg text-blue-600 transition duration-150 ease-in-out">My First Post</a>
+								
+							</div>
+					</li>
 		    
 		</ul>
-		<div>
+		<div class="mt-4">
+	
 
-1 of 1
+	1 of 1
 
+	
 </div>
 
 	</main>
 
-	<footer>
-	<p>&copy; 2024 <a href="http://localhost:1313/"><b>My New Hugo Site</b></a>.
-	<a href="https://github.com/example"><b>Github</b></a>.
-	<a href="https://example.com/@user"><b>Mastodon</b></a>.
-	<a href="/imprint"><b>Imprint</b></a>.
-	</p>
+	</div>
+	<footer class="py-5 px-4 text-center">
+	<div class="flex flex-col space-y-2">
+		<hr>
+		<div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 justify-center items-center">
+			<div>
+				&copy; 2024
+				<a href="http://localhost:1313/blog/">
+					<b>
+						
+							Michał Kurleto
+						
+					</b>
+				</a>
+			</div>
+			<div class="hidden md:block">.</div>
+			
+				<div>
+					<a href="https://github.com/zbsss">
+							<b>Github</b>
+					</a>
+				</div>
+				<li class="hidden md:block">.</li>
+				<div>
+					<a href="https://linkedin.com/in/mkurleto">
+							<b>LinkedIn</b>
+					</a>
+				</div>
+				
+		</div>
+	</div>
 </footer>
 
 </body>

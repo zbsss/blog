@@ -1,0 +1,12 @@
+<div class="flex flex-wrap items-center text-gray-600 text-sm my-2">
+  <p class="text-sm font-medium text-gray-500">{{ .Date.Format "January 2, 2006" }}</p>
+
+  {{ if .Params.tags }}
+    <div class="flex flex-wrap ml-4 gap-2">
+      <span class="text-sm font-medium text-gray-500">Tags:</span>
+      {{ range .Params.tags }}
+      <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}" class="text-blue-600">{{ . }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

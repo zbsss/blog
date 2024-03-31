@@ -1,0 +1,27 @@
+{{ define "main" }}
+	<main class="max-w-4xl p-4">
+		{{ $listtitle := .Title }}
+		{{ if or .Title .Content }}
+			<div>
+				{{ with .Title }}<h1 class="text-3xl font-bold">{{ . }}</h1>{{ end }}
+				{{ with .Content }}<div class="mt-4 text-gray-700">{{ . }}</div>{{ end }}
+			</div>
+		{{ end }}
+
+		<ul class="list-none p-4">
+		    {{ range .Paginator.Pages }}
+					<li>
+							<div>
+								{{ if eq $listtitle "Posts" }}
+									<span class="text-sm font-medium text-gray-500">{{ .Date.Format "2006-01-02" }}</span>
+									<a href="{{ .RelPermalink }}" class="ml-2 text-lg text-blue-600 transition duration-150 ease-in-out">{{ .Title }}</a>
+								{{ else }}
+									<a href="{{ .RelPermalink }}" class="text-lg text-blue-600 transition duration-150 ease-in-out">{{ .Title }}</a>
+								{{ end }}
+							</div>
+					</li>
+		    {{ end }}
+		</ul>
+		{{ partial "pagination.html" . }}
+	</main>
+{{ end }}

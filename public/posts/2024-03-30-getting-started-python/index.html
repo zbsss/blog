@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-us" class="h-full">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+	<script>
+		tailwind.config = {
+
+		}
+	</script>
+	<style type=text/css>
+		body {
+			font-family: monospace;
+		}
+	</style>
+	<title>Getting Started With Python</title>
+	<meta name="description" content="Personal blog of Michał Kurleto">
+	<meta name="author" content="Michał Kurleto">
+	<link rel="stylesheet" href="/blog/css/style.css">
+	
+	
+</head>
+<body class="h-full min-h-screen flex-1 w-full max-w-4xl mx-auto flex flex-col">
+	<div class="flex flex-col flex-1">
+    <header class="p-4 text-lg font-semibold">
+	<div class="flex items-center">
+		<div>
+			=================<br>
+			== <a href="http://localhost:1313/blog/">mkurleto.io</a> ==<br>
+			=================
+		</div>
+		<div class="grow"></div>
+		<div class="hidden md:block">Software Engineer @ Google</div>
+	</div>
+
+	
+		
+			<nav class="mt-4">
+				<ul class="flex space-x-2">
+					
+						<li>
+							<a href="/blog/posts/">
+								<b>Posts</b>
+							</a>
+						</li>
+						<li>.</li>
+					
+						<li>
+							<a href="/blog/updates/">
+								<b>Updates</b>
+							</a>
+						</li>
+						<li>.</li>
+					
+						<li>
+							<a href="/blog/about/">
+								<b>About</b>
+							</a>
+						</li>
+						<li>.</li>
+					
+						<li>
+							<a href="/blog/tags/">
+								<b>Tags</b>
+							</a>
+						</li>
+						
+					
+				</ul>
+		  </nav>
+	
+</header>
+
+		
+<main class="max-w-4xl p-4 dark:prose-invert">
+    <div>
+        <h1 class="font-bold text-3xl lg:text-4xl dark:prose-invert">Getting Started With Python</h1>
+				<div class="my-4">
+					<div class="flex flex-wrap items-center text-gray-600 text-sm my-2">
+  <p class="text-sm font-medium text-gray-500">March 30, 2024</p>
+
+  
+    <div class="flex flex-wrap ml-4 gap-2">
+      <span class="text-sm font-medium text-gray-500">Tags:</span>
+      
+      <a href="/blog/tags/default" class="text-blue-600">default</a>
+      
+      <a href="/blog/tags/python" class="text-blue-600">python</a>
+      
+    </div>
+  
+</div>
+
+				</div>
+
+				<hr />
+
+        <article class="pb-0 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
+            <p>Python is a powerful, high-level programming language known for its readability
+and versatility. Whether you&rsquo;re new to programming or looking to expand your
+skills, Python offers a fantastic starting point. In this blog post, we&rsquo;ll
+explore why Python is a great language for beginners, dive into some programming
+basics, and run through a few simple code snippets.</p>
+<h2 id="why-python">Why Python?</h2>
+<p>Python has a syntax that&rsquo;s clear and easy to understand, making it perfect for
+beginners. It&rsquo;s also incredibly versatile, used in web development, data
+analysis, artificial intelligence, scientific computing, and more. Plus, Python
+has a vast community and a wealth of libraries and frameworks that can help you
+do almost anything you want.</p>
+<h2 id="basic-concepts">Basic Concepts</h2>
+<p>Before we dive into coding, let&rsquo;s go over a few basic concepts that are
+important in Python programming:</p>
+<ul>
+<li><strong>Variables:</strong> These are used to store information that can be referenced
+and manipulated in a program.</li>
+<li><strong>Data Types:</strong> Python has various data types, including strings, integers,
+and floats. Choosing the right type is crucial for the behavior of your
+variables.</li>
+<li><strong>Functions:</strong> Functions are reusable pieces of code that perform specific
+tasks. They help make your code more readable and efficient.</li>
+</ul>
+<h2 id="your-first-python-program">Your First Python Program</h2>
+<p>Let&rsquo;s start with a classic: a &ldquo;Hello, World!&rdquo; program. This simple program will
+print &ldquo;Hello, World!&rdquo; to your console.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># This is a comment</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hello, World!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Variables and Data Types</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John Doe&#34;</span>  <span style="color:#75715e"># String</span>
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>  <span style="color:#75715e"># Integer</span>
+</span></span><span style="display:flex;"><span>height <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.11</span>  <span style="color:#75715e"># Float</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(name, <span style="color:#e6db74">&#34;is&#34;</span>, age, <span style="color:#e6db74">&#34;years old and&#34;</span>, height,<span style="color:#e6db74">&#34;feet tall.&#34;</span>)
+</span></span></code></pre></div><h2 id="heading"></h2>
+<p>Here&rsquo;s a sample blog post about programming, formatted in Markdown. This post
+will cover the basics of Python programming, including a brief introduction, why
+Python is a great first language to learn, essential concepts, and some simple
+code snippets to get started.</p>
+<p>markdown Copy code</p>
+<h1 id="getting-started-with-python-programming">Getting Started with Python Programming</h1>
+<p>Python is a powerful, high-level programming language known for its readability
+and versatility. Whether you&rsquo;re new to programming or looking to expand your
+skills, Python offers a fantastic starting point. In this blog post, we&rsquo;ll
+explore why Python is a great language for beginners, dive into some programming
+basics, and run through a few simple code snippets.</p>
+<h2 id="why-python-1">Why Python?</h2>
+<p>Python has a syntax that&rsquo;s clear and easy to understand, making it perfect for
+beginners. It&rsquo;s also incredibly versatile, used in web development, data
+analysis, artificial intelligence, scientific computing, and more. Plus, Python
+has a vast community and a wealth of libraries and frameworks that can help you
+do almost anything you want.</p>
+<h2 id="basic-concepts-1">Basic Concepts</h2>
+<p>Before we dive into coding, let&rsquo;s go over a few basic concepts that are
+important in Python programming:</p>
+<ul>
+<li><strong>Variables:</strong> These are used to store information that can be referenced
+and manipulated in a program.</li>
+<li><strong>Data Types:</strong> Python has various data types, including strings, integers,
+and floats. Choosing the right type is crucial for the behavior of your
+variables.</li>
+<li><strong>Functions:</strong> Functions are reusable pieces of code that perform specific
+tasks. They help make your code more readable and efficient.</li>
+</ul>
+<h2 id="your-first-python-program-1">Your First Python Program</h2>
+<p>Let&rsquo;s start with a classic: a &ldquo;Hello, World!&rdquo; program. This simple program will
+print &ldquo;Hello, World!&rdquo; to your console.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># This is a comment</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hello, World!&#34;</span>)
+</span></span><span style="display:flex;"><span>Working <span style="color:#66d9ef">with</span> Variables <span style="color:#f92672">and</span> Data Types
+</span></span><span style="display:flex;"><span>In Python, variables do <span style="color:#f92672">not</span> need explicit declaration to reserve memory space<span style="color:#f92672">.</span> The declaration happens automatically when you assign a value to a variable<span style="color:#f92672">.</span> Here<span style="color:#e6db74">&#39;s how you can work with variables and different data types:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>python
+</span></span><span style="display:flex;"><span>Copy code
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Variables and Data Types</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John Doe&#34;</span>  <span style="color:#75715e"># String</span>
+</span></span><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>  <span style="color:#75715e"># Integer</span>
+</span></span><span style="display:flex;"><span>height <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.11</span>  <span style="color:#75715e"># Float</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(name, <span style="color:#e6db74">&#34;is&#34;</span>, age, <span style="color:#e6db74">&#34;years old and&#34;</span>, height, <span style="color:#e6db74">&#34;feet tall.&#34;</span>)
+</span></span></code></pre></div><h2 id="creating-and-calling-functions">Creating and Calling Functions</h2>
+<p>Functions are defined using the def keyword, and they can have parameters and
+return values. Here&rsquo;s a simple function that takes two numbers and returns their
+sum:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Defining a Function</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_numbers</span>(num1, num2):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> num1 <span style="color:#f92672">+</span> num2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calling the Function</span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> add_numbers(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">15</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;The sum is:&#34;</span>, result)
+</span></span></code></pre></div>
+        </article>
+    </div>
+</main>
+<aside class="w-full p-4 pb-0">
+	<hr class="mb-4">
+	<h3 class="text-xl font-semibold mb-2">LATEST POSTS</h3>
+	<ul class="space-y-2">
+		
+			<li class="">
+					<a href="/blog/posts/2024-03-30-getting-started-python/" class="hover:text-blue-600">Getting Started With Python</a>
+			</li>
+		
+			<li class="">
+					<a href="/blog/posts/2024-03-30-my-second-post/" class="hover:text-blue-600">The Joy of Baking</a>
+			</li>
+		
+			<li class="">
+					<a href="/blog/posts/2024-03-23-my-first-post/" class="hover:text-blue-600">My First Post</a>
+			</li>
+		
+	</ul>
+</aside>
+
+
+	</div>
+	<footer class="py-5 px-4 text-center">
+	<div class="flex flex-col space-y-2">
+		<hr>
+		<div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 justify-center items-center">
+			<div>
+				&copy; 2024
+				<a href="http://localhost:1313/blog/">
+					<b>
+						
+							Michał Kurleto
+						
+					</b>
+				</a>
+			</div>
+			<div class="hidden md:block">.</div>
+			
+				<div>
+					<a href="https://github.com/zbsss">
+							<b>Github</b>
+					</a>
+				</div>
+				<li class="hidden md:block">.</li>
+				<div>
+					<a href="https://linkedin.com/in/mkurleto">
+							<b>LinkedIn</b>
+					</a>
+				</div>
+				
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
