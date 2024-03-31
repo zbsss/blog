@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on mkurleto.io</title>
-    <link>http://localhost:1313/blog/tags/</link>
+    <link>https://mkurleto.io/blog/tags/</link>
     <description>Recent content in Tags on mkurleto.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Michał Kurleto</copyright>
     <lastBuildDate>Sat, 30 Mar 2024 20:37:55 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mkurleto.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Default</title>
-      <link>http://localhost:1313/blog/tags/default/</link>
+      <link>https://mkurleto.io/blog/tags/default/</link>
       <pubDate>Sat, 30 Mar 2024 20:37:55 +0100</pubDate>
-      <guid>http://localhost:1313/blog/tags/default/</guid>
+      <guid>https://mkurleto.io/blog/tags/default/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/blog/tags/python/</link>
+      <link>https://mkurleto.io/blog/tags/python/</link>
       <pubDate>Sat, 30 Mar 2024 20:37:55 +0100</pubDate>
-      <guid>http://localhost:1313/blog/tags/python/</guid>
+      <guid>https://mkurleto.io/blog/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/blog/tags/hugo/</link>
+      <link>https://mkurleto.io/blog/tags/hugo/</link>
       <pubDate>Sat, 23 Mar 2024 18:40:09 +0100</pubDate>
-      <guid>http://localhost:1313/blog/tags/hugo/</guid>
+      <guid>https://mkurleto.io/blog/tags/hugo/</guid>
       <description></description>
     </item>
   </channel>
