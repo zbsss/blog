@@ -2,6 +2,7 @@ baseURL = 'https://mkurleto.io/blog'
 languageCode = 'en-us'
 title = 'mkurleto.io'
 copyright = "Michał Kurleto"
+enableRobotsTXT = true
 
 [params]
 subtitle = "Software Engineer @ Google"

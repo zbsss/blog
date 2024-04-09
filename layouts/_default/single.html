@@ -2,11 +2,11 @@
 <main class="max-w-4xl p-4 dark:prose-invert">
     <div>
         <h1 class="font-bold text-3xl lg:text-4xl dark:prose-invert">{{ .Title }}</h1>
-				<div class="my-4">
-					{{ partial "metadata.html" . }}
-				</div>
+        <div class="my-4">
+            {{ partial "metadata.html" . }}
+        </div>
 
-				<hr />
+        <hr />
 
         <article class="pb-0 w-full max-w-4xl lg:max-w-5xl prose prose-slate dark:prose-invert prose-quoteless post-content">
             {{ .Content | safeHTML }}
